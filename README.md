@@ -57,3 +57,50 @@ See the full write-up and figures in:
 │   └── diabetes.csv
 └── docs/
     └── diabetes_detection_report_public.pdf
+```
+
+---
+
+## How to Run
+
+### 1) Create environment (recommended)
+
+```text
+python -m venv .venv
+# Windows:
+#   .venv\Scripts\activate
+# macOS/Linux:
+#   source .venv/bin/activate
+```
+
+### 2) Install dependencies
+If you have `requirements.txt`:
+
+```text
+pip install -r requirements.txt
+```
+
+Otherwise install the common stack:
+
+```text
+pip install numpy pandas scikit-learn matplotlib seaborn notebook ipywidgets
+pip install torch
+```
+
+### 3) Run the notebook
+
+Open and execute:
+- `notebooks/diabetes_detection.ipynb`
+
+The notebook reads the dataset from:
+- `data/diabetes.csv`
+
+---
+
+## Notes
+- This repository is for **educational / portfolio** demonstration only and is **not medical advice**.
+
+---
+
+## License
+MIT.
